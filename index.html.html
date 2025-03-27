@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FT Design Safi</title>
+    <link rel="stylesheet" href="c:\Users\user\Desktop\ftdesign link\ffg.css">
+    <style>
+        .section-content {
+            display: none; /* Caché par défaut */
+            padding: 10px;
+            background: #0472df;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FT Design Safi</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="show-products">Nos Produits</a></li>
+                <li><a href="#" id="show-services">Nos Services</a></li>
+                <li><a href="#" id="show-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="produits" class="section-content">
+        <h2>Nos Produits</h2>
+        <div class="product-container">
+            <h3>Caches volants & housses haut de gamme</h3>
+            <img src="c:\Users\user\Desktop\img ft\IMG-20250327-WA0023.jpg" alt="Cache volant 1">
+            <img src="c:\Users\user\Desktop\img ft\IMG-20250327-WA0019.jpg" alt="Cache volant 2">
+            <h3>Rouleaux de covering</h3>
+            <img src="c:\Users\user\Desktop\img ft\IMG-20250327-WA0005.jpg" alt="Anime Design">
+            <img src="c:\Users\user\Desktop\img ft\IMG-20250327-WA0020.jpg" alt="YELLOW COVERING">
+            <img src="c:\Users\user\Desktop\img ft\IMG-20250327-WA0021.jpg" alt="GRIS NARDO">
+            <img src="c:\Users\user\Desktop\img ft\IMG-20250327-WA0009.jpg" alt="BLEU EVOQUE">
+            <img src="c:\Users\user\Desktop\img ft\IMG-20250327-WA0011.jpg" alt="Golf 7 covering ">
+            <img src="c:\Users\user\Desktop\img ft\IMG-20250327-WA0004.jpg" alt="moto covering ">
+
+            <h3>Tapis 3D / 5D / Normal</h3>
+            <img src="c:\Users\user\Desktop\img ft\TAPIS.jpg" alt="Tapis voiture">
+        </div>
+    </section>
+
+    <section id="services" class="section-content">
+        <h2>Nos Services</h2> 
+        <p>Chez <b>FT Design Safi</b>   nous vous proposons une gamme complète de services pour la personnalisation de votre véhicule :</p>
+        <ul>
+            <li><b>Wrapping Auto & Moto</b> : Transformez votre voiture ou moto avec un film adhésif de haute qualité.</li>
+            <li><b>Accessoires Auto</b> : Large choix de tapis, housses, caches rétroviseurs et autres accessoires haut de gamme.</li>
+            <li><b>Design Personnalisé</b> : Créez un look unique en fonction de vos envies et besoins.</li>
+        </ul>
+        <p>Notre expertise et nos matériaux de qualité assurent un rendu exceptionnel et durable.</p>
+    </section>
+
+    <section id="contact" class="section-content">
+        <h2>Contact</h2>
+        <p>📞 <b>AHMED :</b> 0614789002 | <b>AMINE :</b> 0674838665</p>
+        <p>📸 Instagram : <a href="https://www.instagram.com/ft_design_maroc" target="_blank">@ft_design_maroc</a></p>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            // Cacher toutes les sections
+            document.querySelectorAll(".section-content").forEach(section => {
+                section.style.display = "none";
+            });
+
+            // Afficher seulement la section sélectionnée
+            document.getElementById(sectionId).style.display = "block";
+        }
+
+        document.getElementById("show-products").addEventListener("click", function(event) {
+            event.preventDefault();
+            showSection("produits");
+        });
+
+        document.getElementById("show-services").addEventListener("click", function(event) {
+            event.preventDefault();
+            showSection("services");
+        });
+
+        document.getElementById("show-contact").addEventListener("click", function(event) {
+            event.preventDefault();
+            showSection("contact");
+        });
+    </script>
+
+    <footer>
+        <p>📞 Contact : 0614789002 | 0674838665</p>
+        <p>📸 Instagram : <a href="https://www.instagram.com/ft_design_maroc" target="_blank">@ft_design_maroc</a></p>
+    </footer>
+
+</body>
+</html>
